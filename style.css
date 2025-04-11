@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--body-bg-clr)
+}
+
+p {
+   color: var(--profile-name-clr);
+}
+
+:root {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    --body-bg-clr:hsl(0, 0%, 8%);
+    --btn-font-clr: hsl(0, 0%, 100%);
+    --profile-name-clr: hsl(0, 0%, 100%);
+    --card-bg-clr:hsl(0, 0%, 12%);
+    --btn-bg-clr:hsl(0, 0%, 20%);
+    --loc-info-clr:hsl(75, 94%, 57%)
+}
+
+.btn {
+    width: 23rem;
+    background-color: var(--btn-bg-clr);
+    color: var(--btn-font-clr); 
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+}
+
+.link {
+ font-size: 1.1rem;
+ text-decoration: none;
+ text-align: center;
+ display: inline-block;
+ padding: 1rem 0;
+ margin-bottom: 1rem;
+ font-weight: 500;
+}
+
+.link-bottom {
+   margin-bottom: 3rem;
+}
+
+/* Notes */
+ /* 1. body bgc = black, the max-width = 1440 for laptop, make a width of 95%, body changed to flex
+ 2. create a card grid containing all the information, card set to width of 320 px, 
+ 3. para font size 1.4rem adjusted as needed */ 
+
+
+ .main-container {
+    max-width: 1440px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .card-container {
+    background-color: var(--card-bg-clr);
+    display: grid;
+    grid-template-columns: max-content;
+    place-items: center;
+    border-radius: 8px;
+    
+ }
+
+ .profile-pic {
+   height: 5rem;
+   width: 5rem;
+   border-radius: 50%;
+   object-fit: cover;
+   margin: 2rem 0;
+}
+
+ .profile-name {
+    color: var(--profile-name-clr);
+    font-size: 2.0rem;
+    font-weight: 400;
+    letter-spacing: .1px;
+    margin-bottom: .5rem;
+ }
+
+ .profile-location {
+   font-size: 1.1rem;
+   color: var(--loc-info-clr);
+   margin-bottom: 2rem;
+}
+
+ .profile-quotes {
+   font-size: 1.1rem;
+   color: var(--profile-name-clr);
+   margin-bottom: 2rem;
+ }
+
+
+.attribution { font-size: 11px; text-align: center; padding-top: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+span {
+    color: var(--profile-name-clr);
+}
